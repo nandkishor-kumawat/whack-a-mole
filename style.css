@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    overflow: hidden;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    /* margin: 5px; */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dirt {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.mole {
+    width: 100px;
+    /* display: none; */
+    position: absolute;
+    bottom: -100%;
+    z-index: -1;
+
+}
+
+.mole {
+    animation: anim1 1s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+@keyframes anim1 {
+    0%, 100% {
+        bottom: -100%;
+    }
+    50%,70% {
+        bottom: -6px;
+    }
+}

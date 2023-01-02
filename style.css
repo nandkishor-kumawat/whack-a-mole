@@ -45,15 +45,17 @@
 
 }
 
-.mole {
+.mole.active {
     animation: anim1 1s cubic-bezier(0.075, 0.82, 0.165, 1) ;
 }
 
 @keyframes anim1 {
-    0%, 100% {
+    0% {
         bottom: -100%;
     }
-    50%,70% {
-        bottom: -6px;
+
+    80% {
+        bottom: 1%;
     }
+    
 }
